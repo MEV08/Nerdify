@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -16,6 +17,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* Container */
 .container {
+    
     width: 100%;
     max-width: 1070px;
     padding: 0 15px;
@@ -371,32 +373,45 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* Section */
 .section {
-    position: relative;
+    position: relative; 
     width: 100%;
+    display: flex;
+    justify-content: center;
+    
     height: 787px;
     background: linear-gradient(180deg, #F9FAFD 0%, #F1F3F9 100%);
+    overflow: hidden;
 }
-.img__top {
-    
+.section__img-top {
+    width: 100%;
+    max-width: 501px;
+    height: auto;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 1;
 }
-.img__bottom {
+.section__img-bottom {
+    width: 100%;
+    max-width: 897px;
+    height: auto;
     position: absolute;
     left: 0;
-    bottom: 0;
-    z-index: 5;
+    bottom: 0;  
+    z-index: 1; 
 }
-.section__content {
-    margin: 0 69px;
-    padding-top: 57px;
+.section__content {  
+    width: 100%;
+    max-width: 1070px;
+    padding: 0 15px;
+    
+    position: absolute;
+    
     text-align: center;
     z-index: 10;
 }
 .section__title {
-    margin: 0 auto;
+    margin: 57px auto 7px;
     font-size: 32px;
     line-height: 44px;
 
@@ -406,9 +421,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: #023135;
 }
 .section__subtitle {
+    margin: 0 69px 45px;
     display: flex;
     justify-content: space-between;
-    z-index: 5;
+    
 }
 .section__subtitle-text {
     font-size: 32px;
@@ -416,4 +432,29 @@ h1, h2, h3, h4, h5, h6, p {
     
     letter-spacing: 0.2px;
     color: #023135;
+}
+.check__mark-content {
+    margin: 0 161px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.check__mark-item {
+    margin-top: 8px;
+    width: 50%;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #023135;
+}
+.check__mark-img { 
+    margin-right: 18px;
+    width: 16px;
+}
+/* Benefits */
+.benefits__content {
+    margin: 99px 66px 100px 70px;
+}
+.benefits__content-title {
+    text-align: center;
 }

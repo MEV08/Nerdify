@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Nerdify</title>
@@ -38,7 +39,9 @@
                     <p>An expert tutor will record a step by step</p>
                     <p>explanation for your request</p>
                 </div>
-                <button class="btn" type="button"> Subscribe now </button>
+                <div class="intro__info-btn">
+                    <button class="btn" type="button"> Subscribe now </button>
+                </div>
             </div>
             <div class="intro__photo">
                 <img class="intro__img" src="images/intro-photo.png" alt="">
@@ -70,7 +73,7 @@
             <h1 class="itworks__content-title">As simple as TikTok and cheaper than a tutoring session</h1>
             <div class="itworks__content-main">
                 <div class="itworks__col-left">
-                    <div class="itworks__block itworks__block--1">
+                    <div class="itworks__block itworks__block--1" data-aos="fade-in">
                         <div class="itworks__block-num">
                             1
                         </div>
@@ -78,7 +81,7 @@
                             Send your problem: take a photo, copy & paste instructions or attach files.
                         </div>
                     </div>
-                    <div class="itworks__block itworks__block--3">
+                    <div class="itworks__block itworks__block--3" data-aos="fade-in" data-aos-delay="1500">
                         <div class="itworks__block-num">
                             3
                         </div>
@@ -89,11 +92,11 @@
                 </div>
                 <div class="device">
                     <img class="device__photo" src="images/iphone.png" alt="">
-                    <img class="device__photo device__photo--screen" src="images/iphone-screen.png" alt="">
-                    <img  class="device__photo device__photo--typing"  src="images/typing.svg" alt="">
+                    <img class="device__photo device__photo--screen" src="images/iphone-screen.png" alt="" data-aos="fade-in">
+                    <img  class="device__photo device__photo--typing"  src="images/typing.svg" alt="" data-aos="fade-in" data-aos-delay="900">
                 </div>
                 <div class="itworks__col-right">
-                    <div class="itworks__block itworks__block--2">
+                    <div class="itworks__block itworks__block--2" data-aos="fade-in" data-aos-delay="900">
                         <div class="itworks__block-num">
                             2
                         </div>
@@ -186,14 +189,121 @@
     <div class="container">
         <div class="benefits__content">
             <h1 class="benefits__content-title">
-                178 tutors are online now and ready to help you ASAP!
+                <a href="#" class="benefits__content-link">178 tutors</a>
+                 are online now and ready to help you ASAP!
             </h1>
             <h4 class="benefits__content-subtitle">
                 Tap to see our tutors in action!
             </h4>
+            <div class="benefits__video">
+                <div class="benefits__video-block">
+                    Statistics
+                    <div class="benefits__video">
+                        <img class="benefits__video-img" src="images/statisticks-block.jpg" alt="">
+                        <div class="benefits__video-play">
+                            <img class="play-btn" src="images/play-btn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits__video-block">
+                    Chemistry
+                    <div class="benefits__video">
+                        <img class="benefits__video-img" src="images/chemistry-block.jpg" alt="">
+                        <div class="benefits__video-play">
+                            <img class="play-btn" src="images/play-btn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits__video-block">
+                    Economics
+                    <div class="benefits__video">
+                        <img class="benefits__video-img" src="images/economics-block.jpg" alt="">
+                        <div class="benefits__video-play">
+                            <img class="play-btn" src="images/play-btn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div><!-- /.Benefits -->
 
+<section class="pricing">
+    <div class="container">
+        <div class="pricing__content">
+            <h1 class="pricing__title">Choose your plan</h1>
+            <img class="pricing__circle-1" src="images/pricing-circle1.png" alt="">
+            <img class="pricing__circle-2" src="images/pricing-circle2.png" alt="">
+            <div class="choose__plan">
+                <div class="choose__plan-item">
+                    <h3 class="choose__plan-title">Basic - $49/mo</h3>
+                    
+                    <ul class="plan-list">
+                        <li class="plan__list-item">15 problems/mo included</li>
+                        <li class="plan__list-item">Then: $5/problem</li>
+                        <li class="plan__list-item">Private chat with tutor</li>
+                        <li class="plan__list-item">Unlimited access 24/7</li>
+                    </ul>
+                    <div class="choose__plan-footer">
+                        <button class="btn btn--wide" type="button">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="choose__plan-item">
+                    <h3 class="choose__plan-title">Pro - $99/mo</h3>
+                    
+                    <ul class="plan-list">
+                        <li class="plan__list-item">35 problems/mo included</li>
+                        <li class="plan__list-item">Then: $4/problem</li>
+                        <li class="plan__list-item">Private chat with tutor</li>
+                        <li class="plan__list-item">Unlimited access 24/7</li>
+                    </ul>
+                    <div class="choose__plan-footer">
+                        <button class="btn btn--wide" type="button">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- /.pricing -->
+<div class="faq">
+    <div class="container">
+        <div class="faq__content">
+            <div class="faq__title">FAQ</div>
+            <div class="faq__block">
+                <div class="faq__block-item">
+                    <img class="faq__block-img" src="images/plus.svg" alt="">
+                    <div class="faq__block-text">How it works?</div>
+                </div>
+                <div class="faq__block-item">
+                    <img class="faq__block-img" src="images/plus.svg" alt="">
+                    <div class="faq__block-text">How do I cancel my subscription?</div>
+                </div>
+                <div class="faq__block-item">
+                    <img class="faq__block-img" src="images/plus.svg" alt="">
+                    <div class="faq__block-text">Can I submit more than 1 problem at once?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.FAQ-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <a href="#" class="footer__logo">
+                <img src="images/logo-top.svg" width="67px"  alt="">
+                <img class="logo__img-txt" src="images/logo-bottom.svg" width="54px"  alt="">
+            </a>
+            <nav class="footer__nav">
+                <a href="#" class="footer__nav-link">Privacy Policy</a>
+                <a href="#" class="footer__nav-link">Terms&Conditions</a>
+                <a href="#" class="footer__nav-link">Refund Policy</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+<!-- /.Footer -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

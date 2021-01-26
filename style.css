@@ -927,16 +927,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 @media (max-width: 375px) {
+    /* Nav */
+    .nav__link {
+        margin: 0;
+    }
+    /* Section */
     .check__mark-content {
         margin: 0;
     }
+    /* benefits */
     .benefits__video-play {
         top: 29.3%;
         left: 33.9%;
     }
-    .nav__link {
-        margin: 0;
-    }
+    /* Footer */
     .footer__nav{ 
         width: 70%;   
     }

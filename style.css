@@ -941,7 +941,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
 }
-@media (max-width: 375px) {
+@media (max-width: 405px) {
     /* Nav */
     .nav__link {
         margin: 0;
